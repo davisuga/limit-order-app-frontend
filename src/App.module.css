@@ -1,0 +1,5 @@
+.gradient-bg {
+  background: radial-gradient(ellipse at top left, #19445C, transparent 60%),
+  radial-gradient(ellipse at bottom right, #19445C, transparent 60%)
+            
+}
