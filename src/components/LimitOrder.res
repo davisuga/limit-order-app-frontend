@@ -22,13 +22,13 @@ let make = (~onSubmit=?, ~loggedIn=false) => {
     <Text className="font-bold text-2xl"> "Limit order" </Text>
     <div className="flex gap-2">
       <Text className="text-gray-400"> "Available:" </Text>
-      <Text className=""> {available->Float.toString ++ " ETH"} </Text>
+      <Text className=""> {available->Float.toString ++ " DAI"} </Text>
     </div>
     <Input label="Price" value={price} onChange={updateField(setPrice)} />
     <Input label="Amount" value={amount} onChange={updateField(setAmount)} />
     <div className="flex gap-2">
       <Text className="text-gray-400"> "Total:" </Text>
-      <Text className=""> {total->Float.toString ++ " ETH"} </Text>
+      <Text className=""> {total->Float.toString ++ " DAI"} </Text>
     </div>
     <button
       onClick=?onSubmit
